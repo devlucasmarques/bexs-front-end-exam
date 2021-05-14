@@ -1,3 +1,4 @@
+import React from 'react';
 import Document, {
   DocumentContext,
   DocumentInitialProps,
@@ -37,7 +38,7 @@ export default class MyDocument extends Document {
     }
   }
 
-  render() {
+  render(): JSX.Element {
     return (
       <Html lang="pt">
         <Head>
