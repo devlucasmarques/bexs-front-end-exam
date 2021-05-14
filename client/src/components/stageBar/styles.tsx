@@ -36,6 +36,7 @@ const Header = styled.header`
   background-color: ${theme.colors.red.normal};
   padding: 0 ${paddingRight}px 0 ${paddingLeft}px;
   width: calc(352px - ${paddingRight}px * 2);
+  height: 100%;
 
   @media (${down.tablet}) {
     width: 100%;

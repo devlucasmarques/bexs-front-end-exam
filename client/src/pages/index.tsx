@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import StageBar from '../components/stageBar';
 import React from 'react';
+import { StagePage } from '../styles/home';
 
 const Home: React.FC = () => {
   return (
@@ -10,7 +11,10 @@ const Home: React.FC = () => {
       </Head>
 
       <main>
-        <StageBar stageNumber={2} />
+        <StagePage>
+          <StageBar stageNumber={2} />
+          <div>Forms</div>
+        </StagePage>
       </main>
     </div>
   );
