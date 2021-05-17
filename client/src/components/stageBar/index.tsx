@@ -4,6 +4,7 @@ import Image from 'next/image';
 import imgAddCard from './imgAddCard.svg';
 import { Header, Head2, WrapperTitle, WrapperImage, Nav } from './styles';
 import { Chevron, Direction } from '../chevron/styles';
+import theme from '../../styles/theme';
 
 export interface IStageBar {
   stageNumber: number;
@@ -21,6 +22,7 @@ const StageBar: FC<IStageBar> = ({ stageNumber = 1 }) => {
           direction={Direction.left}
           margin="1px 14px 0 0"
           size={{ laptop: 8, mobile: 12 }}
+          color={theme.colors.white.normal}
         />
         <ul>
           <li onClick={handleClickBack}>Alterar forma de pagamento</li>

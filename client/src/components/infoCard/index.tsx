@@ -29,7 +29,6 @@ const InfoCard: FC<IInfoCard> = ({ cardNumber, cardName, cardValid }) => {
         />
       </ImageBackground>
       <LogoVisa>
-        {/* <Image alt="Visa" src={imgVisa} height={23} width={70} /> */}
         <Image
           alt="Visa"
           src={imgVisa}
@@ -49,4 +48,4 @@ const InfoCard: FC<IInfoCard> = ({ cardNumber, cardName, cardValid }) => {
   );
 };
 
-export { InfoCard };
+export default InfoCard;

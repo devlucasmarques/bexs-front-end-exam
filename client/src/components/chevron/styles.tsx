@@ -11,6 +11,7 @@ export enum Direction {
 export interface IChevron {
   direction: Direction;
   margin: string;
+  color: string;
   size: {
     laptop: number;
     mobile: number;
@@ -49,6 +50,7 @@ const Chevron = styled.p<IChevron>`
     top: 0.15em;
     transform: rotate(-45deg);
     vertical-align: top;
+    color: ${(props) => props.color};
     margin: ${(props) => props.margin};
     height: ${(props) => props.size.laptop}px;
     width: ${(props) => props.size.laptop}px;

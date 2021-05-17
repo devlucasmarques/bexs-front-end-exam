@@ -11,4 +11,4 @@ const StagePage = styled.div`
   }
 `;
 
-export { StagePage };
+export default StagePage;

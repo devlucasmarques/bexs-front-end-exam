@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import StageBar from '../components/stageBar';
 import React from 'react';
-import { StagePage } from '../styles/home';
-import { InfoCard } from '../components/infoCard';
+import StagePage from '../styles/home';
+import InfoCard from '../components/infoCard';
+import PathBar from '../components/pathBar';
 
 const Home: React.FC = () => {
   return (
@@ -19,7 +20,9 @@ const Home: React.FC = () => {
             cardName="FELIPE B A PIO NT"
             cardValid="06/26"
           />
-          <div>Forms</div>
+          <div>
+            <PathBar stageNumber={2} />
+          </div>
         </StagePage>
       </main>
     </div>
