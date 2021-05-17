@@ -1,5 +1,10 @@
 const withImages = require('next-images');
+const staticFolder = '/public/';
 
 module.exports = withImages({
-  esModule: true
-})
+  publicRuntimeConfig: {
+    staticFolder,
+  },
+  esModule: true,
+
+});

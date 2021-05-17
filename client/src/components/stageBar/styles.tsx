@@ -48,8 +48,8 @@ const Header = styled.header`
 `;
 
 const Head2 = styled.h2`
-  font: normal normal bold 20px/24px Verdana;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font: normal normal bold 20px/24px 'Lato';
+  font-family: 'Inter';
   color: ${theme.colors.white.normal};
   margin-left: 16px;
 
@@ -66,8 +66,8 @@ const Nav = styled.nav`
   padding-top: 53px;
 
   > ul {
-    font: normal normal normal 13px/22px Verdana;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font: normal normal normal 13px/22px Inter;
+    font-family: Inter, Geneva, Tahoma, sans-serif;
   }
 
   > p.stage {
@@ -75,8 +75,8 @@ const Nav = styled.nav`
     position: absolute;
     width: calc(100% - ${paddingCenter}px);
     text-align: center;
-    font: normal normal normal 13px/36px Verdana;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font: normal normal normal 13px/36px Inter;
+    font-family: Inter, Geneva, Tahoma, sans-serif;
   }
 
   @media (${down.tablet}) {

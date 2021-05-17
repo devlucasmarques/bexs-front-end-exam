@@ -1,14 +1,7 @@
 import { createGlobalStyle } from "styled-components";
+import theme from "./theme";
 
 export default createGlobalStyle`
-
-  @font-face {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    src: url('/fonts/Verdana.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-  }
-
   * {
     margin: 0;
     padding: 0;
@@ -16,9 +9,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background: ${props => props.theme.colors.white.normal};
-    color: ${props => props.theme.colors.white.normal};
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: ${theme.colors.white.normal};
   }
 
   ul {
