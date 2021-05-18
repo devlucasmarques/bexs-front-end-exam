@@ -16,10 +16,18 @@ const Container = styled.div`
   .path-bar-text {
     :not(:first-child) {
       margin-left: 8px;
+
+      @media (${down.custom950}) {
+        margin-left: 4px;
+      }
     }
 
     :not(:last-child) {
       margin-right: 24px;
+
+      @media (${down.custom950}) {
+        margin-right: 4px;
+      }
     }
   }
 

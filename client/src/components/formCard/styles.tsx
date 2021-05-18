@@ -8,8 +8,12 @@ const Form = styled.form`
   justify-content: space-between;
   margin-top: 46px;
 
-  @media (${down.tablet}) {
+  @media (${down.custom950}) {
     max-width: 280px;
+    margin: 46px 0 0 75px;
+  }
+
+  @media (${down.tablet}) {
     margin: 0 auto;
   }
 `;

@@ -67,8 +67,8 @@ const ChevronWrapper = styled.div`
   left: 420px;
   width: 8px;
 
-  @media (${down.tablet}) {
-    left: 252px;
+  @media (${down.custom950}) {
+    left: 262px;
   }
 `;
 
