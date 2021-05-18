@@ -35,8 +35,8 @@ const WrapperTitle = styled.div`
 const Header = styled.header`
   background-color: ${theme.colors.red.normal};
   padding: 0 ${paddingRight}px 0 ${paddingLeft}px;
-  width: calc(352px - ${paddingRight}px * 2);
-  height: 100%;
+  width: 352px;
+  min-width: 352px;
 
   @media (${down.tablet}) {
     width: 100%;

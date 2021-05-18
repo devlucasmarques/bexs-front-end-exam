@@ -1,11 +1,17 @@
 import Head from 'next/head';
 import StageBar from '../components/stageBar';
-import React from 'react';
-import StagePage from '../styles/home';
+import React, { useState } from 'react';
+import { StagePage, FormContainer } from '../styles/home';
 import InfoCard from '../components/infoCard';
 import PathBar from '../components/pathBar';
+import FormCard from '../components/formCard';
 
 const Home: React.FC = () => {
+  const [cardNumber, setCardNumber] = useState('5149 4505 6231 6542');
+  const [cardName, setCardName] = useState('FELIPE B A PIO NT');
+  const [cardValid, setCardValid] = useState('06/27');
+  const [cardCVV, setCardCVV] = useState('123');
+  const [cardIsEnterCVV, setCardIsEnterCVV] = useState(false);
   return (
     <div>
       <Head>
@@ -16,13 +22,22 @@ const Home: React.FC = () => {
         <StagePage>
           <StageBar stageNumber={2} />
           <InfoCard
-            cardNumber="5149 4505 6231 6542"
-            cardName="FELIPE B A PIO NT"
-            cardValid="06/26"
+            cardNumber={cardNumber}
+            cardName={cardName}
+            cardValid={cardValid}
+            cardCVV={cardCVV}
+            isEnterCVV={cardIsEnterCVV}
           />
-          <div>
+          <FormContainer>
             <PathBar stageNumber={2} />
-          </div>
+            <FormCard
+              setCardNumber={setCardNumber}
+              setCardName={setCardName}
+              setCardValid={setCardValid}
+              setCardCVV={setCardCVV}
+              setCardIsEnterCVV={setCardIsEnterCVV}
+            />
+          </FormContainer>
         </StagePage>
       </main>
     </div>

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { down } from '../../styles/medias';
+import theme from '../../styles/theme';
 
 const Container = styled.div`
   position: absolute;
@@ -11,13 +12,13 @@ const Container = styled.div`
   @media (${down.tablet}) {
     left: calc(50% - 140px);
     width: 280px;
+    top: 151px;
     height: 172px;
   }
 
   .letterCard {
     position: relative;
     z-index: 1;
-    /* font: normal normal normal 22px/28px 'SF Pro Text'; */
     font: normal normal normal 22px/28px 'Arial';
     letter-spacing: 2.31px;
     color: #ffffff;
@@ -82,4 +83,33 @@ const LogoVisa = styled.div`
   }
 `;
 
-export { Container, ImageBackground, LogoVisa, WrapperNameValid, WrapperInfo };
+const ViewCVV = styled.div`
+  position: relative;
+  z-index: 2;
+  color: ${theme.colors.black.normal};
+  top: 30px;
+  left: 184px;
+  width: 50px;
+
+  @media (${down.tablet}) {
+    top: 8px;
+    left: 138px;
+  }
+`;
+
+const NoImage = styled.div`
+  height: 23px;
+
+  @media (${down.tablet}) {
+    height: 17px;
+  }
+`;
+export {
+  Container,
+  ImageBackground,
+  LogoVisa,
+  WrapperNameValid,
+  WrapperInfo,
+  ViewCVV,
+  NoImage
+};

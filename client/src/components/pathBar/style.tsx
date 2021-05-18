@@ -5,11 +5,13 @@ import theme from '../../styles/theme';
 const Text = styled.p`
   color: ${theme.colors.red.normal};
   font-family: 'Inter';
+  font-size: 13px;
 `;
 
 const Container = styled.div`
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 
   .path-bar-text {
     :not(:first-child) {

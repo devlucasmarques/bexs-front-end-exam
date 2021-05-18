@@ -11,4 +11,12 @@ const StagePage = styled.div`
   }
 `;
 
-export default StagePage;
+const FormContainer = styled.div`
+  padding: 50px 64px 0 168px;
+
+  @media (${down.tablet}) {
+    padding: 110px 40px 0;
+  }
+`;
+
+export { StagePage, FormContainer };
