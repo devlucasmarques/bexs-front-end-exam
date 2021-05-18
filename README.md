@@ -8,6 +8,7 @@
   
 # Para executar
   * Basta rodar `yarn dev`
+  * Acessar `http://localhost:3000/`
 
 # Referências
 * Design [aqui](https://xd.adobe.com/spec/9c4a9206-ac61-4050-796d-89c00fb79e91-ea7b/screen/f268d7c8-e6be-4aff-95cf-2f11f5add89f/specs/)
