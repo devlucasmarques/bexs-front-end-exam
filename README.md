@@ -2,6 +2,9 @@
   Esse projeto é uma demonstração de uma página SPA feito em React/Next com Typescript, eslint, prettier e utiliza styled-components para a estilização das folhas de estilo. Esse projeto está organizado nas pastas: pages, public - configuração do Next para renderizar as páginas, APIs e diretório padrão, components - para renderizar componente a componente das páginas, styles - para folha de estilo das páginas e stilos globais, utils - para encapsular códigos que podem ser reutilizados ou para a clareza dos componentes e/ou páginas.
 
 # Caracteristicas reponsivas
+  O projeto foi criado com base de 1024px para Desktop, 768px para Tablet e 360px para Mobile como previsto no layout.
+  
+ **Nota**: Na transição entre Desktop para Tablet, o layout poderia ser diferente.
   
 # Para executar
   * Basta rodar `yarn dev`
