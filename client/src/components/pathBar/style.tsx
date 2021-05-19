@@ -4,7 +4,6 @@ import theme from '../../styles/theme';
 
 const Text = styled.p`
   color: ${theme.colors.red.normal};
-  font-family: 'Inter';
   font-size: 13px;
 `;
 
@@ -43,7 +42,6 @@ const StageNumber = styled.div`
   width: 22px;
   text-align: center;
   color: ${theme.colors.red.normal};
-  font-family: 'Arial';
   line-height: 18px;
   font-size: 13px;
   font-weight: bold;

@@ -11,7 +11,7 @@ const Label = styled.label`
   color: ${theme.colors.gray.normal};
   position: relative;
   top: -50px;
-  font: normal normal normal 17px/22px 'Arial';
+  font: normal normal normal 17px/22px 'Verdana', sans-serif;
   transition: all 200ms linear;
 `;
 
@@ -19,7 +19,7 @@ const Input = styled.input<IInput>`
   color: ${theme.colors.black.normal};
   width: 100%;
   border: none;
-  font: normal normal normal 17px/22px 'Arial';
+  font: normal normal normal 17px/22px 'Verdana', sans-serif;
   padding: 2px;
   outline: none;
   border-bottom: 1px solid
@@ -58,7 +58,7 @@ const InputContainer = styled.div<IInput>`
 const Error = styled.p<IInput>`
   color: ${theme.colors.red.error};
   margin-top: 3px;
-  font: normal normal normal 13px/22px 'Arial';
+  font: normal normal normal 13px/22px 'Verdana', sans-serif;
 `;
 
 const ChevronWrapper = styled.div`
@@ -108,12 +108,16 @@ const Options = styled.div`
 
   li {
     padding: 4px;
-    font: normal normal normal 17px/22px 'Arial';
+    font: normal normal normal 17px/22px 'Verdana', sans-serif;
 
     &:hover {
       background-color: ${theme.colors.gray.normal};
     }
   }
+`;
+
+const OptionItem = styled.li`
+  cursor: pointer;
 `;
 
 export {
@@ -123,5 +127,6 @@ export {
   Error,
   ChevronWrapper,
   ImageWrapper,
-  Options
+  Options,
+  OptionItem
 };

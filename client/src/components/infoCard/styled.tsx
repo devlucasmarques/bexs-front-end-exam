@@ -4,25 +4,30 @@ import theme from '../../styles/theme';
 
 const Container = styled.div`
   position: absolute;
-  top: 202px;
-  left: 64px;
+  top: 352px;
+  left: calc(64px + ((100vw - 1024px) / 2));
   width: 364px;
   height: 224px;
+
+  @media (${down.laptop}) {
+    left: 64px;
+  }
 
   @media (${down.tablet}) {
     left: calc(50% - 140px);
     width: 280px;
-    top: 151px;
+    top: 310px;
     height: 172px;
   }
 
   .letterCard {
     position: relative;
     z-index: 1;
-    font: normal normal normal 22px/28px 'Arial';
+    font: normal normal normal 22px/28px 'SFProText';
     letter-spacing: 2.31px;
     color: #ffffff;
     text-shadow: 0px 1px 2px #000000b3;
+    text-align-last: justify;
 
     &.major {
       width: 100%;

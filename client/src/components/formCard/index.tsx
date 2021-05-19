@@ -54,11 +54,11 @@ const FormCard: FC<IFormCard> = ({
         error="Insira o número de parcelas"
         type="select"
         options={[
-          '1x R$ 1.000,00 sem juros',
-          '2x R$ 500,00 sem juros',
-          '3x R$ 340,00 com juros',
-          '4x R$ 255,00 com juros',
-          '5x R$ 220,00 com juros'
+          '1x R$1.000,00 sem juros',
+          '2x R$500,00 sem juros',
+          '3x R$340,00 com juros',
+          '4x R$255,00 com juros',
+          '5x R$220,00 com juros'
         ]}
       />
       <ButtonWrapper>

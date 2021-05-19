@@ -1,24 +1,37 @@
 import Head from 'next/head';
 import StageBar from '../components/stageBar';
 import React, { useState } from 'react';
-import { StagePage, FormContainer } from '../styles/home';
+import {
+  StagePage,
+  FormContainer,
+  Main,
+  Nav,
+  HomeContainer
+} from '../styles/home';
 import InfoCard from '../components/infoCard';
 import PathBar from '../components/pathBar';
 import FormCard from '../components/formCard';
+import imgLogo from '../../public/logo.svg';
+import Image from 'next/image';
 
 const Home: React.FC = () => {
-  const [cardNumber, setCardNumber] = useState('5149 4505 6231 6542');
-  const [cardName, setCardName] = useState('FELIPE B A PIO NT');
-  const [cardValid, setCardValid] = useState('06/27');
-  const [cardCVV, setCardCVV] = useState('123');
+  const [cardNumber, setCardNumber] = useState('');
+  const [cardName, setCardName] = useState('');
+  const [cardValid, setCardValid] = useState('');
+  const [cardCVV, setCardCVV] = useState('');
   const [cardIsEnterCVV, setCardIsEnterCVV] = useState(false);
   return (
-    <div>
+    <HomeContainer>
       <Head>
         <title>Demo Shop</title>
       </Head>
 
-      <main>
+      <Main>
+        <Nav>
+          <a href="http://localhost:3000/">
+            <Image src={imgLogo} alt="Demo Shop" width={260} height={42} />
+          </a>
+        </Nav>
         <StagePage>
           <StageBar stageNumber={2} />
           <InfoCard
@@ -39,8 +52,8 @@ const Home: React.FC = () => {
             />
           </FormContainer>
         </StagePage>
-      </main>
-    </div>
+      </Main>
+    </HomeContainer>
   );
 };
 

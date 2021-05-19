@@ -12,6 +12,7 @@ const theme = {
     },
     gray: {
       normal: '#C9C9C9',
+      light: '#F7F7F7'
     },
   }
 }

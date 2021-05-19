@@ -9,7 +9,8 @@ import {
   Error,
   ChevronWrapper,
   ImageWrapper,
-  Options
+  Options,
+  OptionItem
 } from './styles';
 import { strSeparate, isValidDate } from '../../utils/general';
 
@@ -43,6 +44,10 @@ const CustomInput: FC<ICustomInput> = ({
   useEffect(() => {
     setStateCard && setStateCard(text);
   }, [text]);
+
+  useEffect(() => {
+    if (type === 'select' && options.length > 0) setText(options[0]);
+  }, []);
 
   const validation = (type: string) => {
     switch (id) {
@@ -93,7 +98,7 @@ const CustomInput: FC<ICustomInput> = ({
       const tmr = setInterval(() => {
         setShowSelect(false);
         clearInterval(tmr);
-      }, 100);
+      }, 200);
     }
   };
 
@@ -102,7 +107,6 @@ const CustomInput: FC<ICustomInput> = ({
   };
 
   const handleFocus = () => {
-    console.log('enter');
     if (type === 'select') handleOpen();
 
     if (id === 'CVV') setCardIsEnterCVV(true);
@@ -146,9 +150,9 @@ const CustomInput: FC<ICustomInput> = ({
         <Options className={`show-${showSelect}`}>
           <ul>
             {options.map((opt) => (
-              <li key={opt} onClick={() => setText(opt)}>
+              <OptionItem key={opt} onClick={() => setText(opt)}>
                 {opt}
-              </li>
+              </OptionItem>
             ))}
           </ul>
         </Options>

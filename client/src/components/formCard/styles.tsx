@@ -23,10 +23,10 @@ const Button = styled.button`
   color: ${theme.colors.white.normal};
   text-transform: uppercase;
   padding: 16px 71px;
-  font: normal normal 600 17px/22px 'Arial';
+  font: normal normal 600 17px/22px 'Verdana', sans-serif;
   border: none;
   border-radius: 10px;
-  margin-top: 36px;
+  margin-top: 16px;
   float: right;
 
   @media (${down.tablet}) {
